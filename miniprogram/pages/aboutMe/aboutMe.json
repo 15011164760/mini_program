@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tabs":"../../Components/Tabs/tabs"
+  },
+  "pageOrientation": "auto"
+}

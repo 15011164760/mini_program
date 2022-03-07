@@ -1,0 +1,18 @@
+<!--Components/Tabs/tabs.wxml-->
+<text>我是Tabs的组件哈哈</text>
+<view>
+    {{getDa}}
+</view>
+<view>
+    <block wx:for="{{listData}}" wx:key="id">
+        <view class="{{item.active?'active':''}}" bindtap="curentClick" data-index="{{index}}" wx:for-index="index" wx:for-item="item">
+            {{item.name}}=={{item.id}}
+        </view>
+    </block>
+      <view style='background:#CCC'>
+            插槽里面：
+            <slot></slot>
+        </view>
+</view>
+  
+  
