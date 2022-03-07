@@ -3,7 +3,9 @@
     "pages/aboutMe/aboutMe",
     "pages/index/index",
     "pages/editInfo/editInfo",
-    "pages/logs/logs"
+    "pages/myStatus/myStatus",
+    "pages/logs/logs",
+    "pages/myTabs/myTabs"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -18,18 +20,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "首页"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "日志"
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

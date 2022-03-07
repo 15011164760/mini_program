@@ -1,0 +1,38 @@
+<!-- pages/myStatus/myStatus.wxml -->
+<view class="myStatusPage">
+    <view class="tabs">
+        <Tabs listData="{{tabList}}" bindchangeTab="changeDataTab">
+            <view class="emptyClass" wx:if="{{resList.length<1}}">
+                {{tabList[activeIndex].emptyDesc}}
+            </view>
+            <view wx:else class="listClass">
+                <view class="inner {{index==0?'marginTop':''}}" wx:for="{{resList}}" wx:key="index">
+                    <view class="item">
+                        <image class="left" src="{{item.logoUrl}}" mode="aspectFit|aspectFill|widthFix" />
+                        <view class="right">
+                            <view class="name_price">
+                                <view class="name_price_inner name_price_inner_left">
+                                    <view class="name">{{item.name}}</view>
+                                    <view class="status {{item.statusType=='0'?'fail':'success'}}">{{item.satus}}</view>
+                                </view>
+                                <view class="name_price_inner price">{{item.price}}</view>
+                            </view>
+                            <view class="date_address_job">
+                                <text>{{item.date}}</text>
+                                <text>{{item.address}}</text>
+                                <text>{{item.job}}</text>
+                            </view>
+                            <view class="tagsClass">
+                                <text wx:for="{{item.tags}}" wx:key="index">{{item}}</text>
+                            </view>
+                            <view class="desc">
+                                <text>{{item.desc}}</text>
+                            </view>
+                              
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </Tabs>
+    </view>
+</view>

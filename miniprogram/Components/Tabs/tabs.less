@@ -1,0 +1,30 @@
+/* Components/Tabs/tabs.wxss */
+
+
+.tabsComAll {
+    .tabsCom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70rpx;
+
+        .item {
+            height: 70rpx;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #ccc;
+
+            &.active {
+                color: #000;
+                border-bottom: 6rpx solid rgb(230, 152, 9);
+            }
+        }
+    }
+
+    .tabContent {
+        width: 100%;
+        height: ~'calc(100vh - 90rpx)';
+        background: rgb(187, 217, 223);
+    }
+}

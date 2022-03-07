@@ -8,10 +8,19 @@
     <view>good1</view>
     <view>good1</view>
     <button style="margin-bottom:10px">
-        <navigator target="" url="/pages/editInfo/editInfo" open-type="navigate">编辑页面 navigate</navigator>
+        <navigator target="" url="/pages/myStatus/myStatus" open-type="navigate">
+            编辑页面 myStatus
+        </navigator>
     </button>
     <button style="margin-bottom:10px">
-        <navigator target="" url="/pages/editInfo/editInfo" open-type="redirect">编辑页面 redirect</navigator>
+        <navigator target="" url="/pages/editInfo/editInfo" open-type="navigate">
+            编辑页面 navigate
+        </navigator>
+    </button>
+    <button style="margin-bottom:10px">
+        <navigator target="" url="/pages/editInfo/editInfo" open-type="redirect">
+            编辑页面 redirect
+        </navigator>
     </button>
     <button open-type="share">shareshareshare</button>
     <Tabs getDa="我是传过去的值" listData="{{listData}}" bindchangeTab="changeDataTab">
