@@ -131,5 +131,24 @@ Page({
       tabList: this.data.tabList,
       activeIndex: currentIndex
     })
+  },
+  getda(){
+    wx.request({
+      url: 'https://api.shop.eduwork.cn/api/user', //仅为示例，并非真实的接口地址
+      method:'POST',
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data)
+      },
+      fail: function (err) {
+        console.log(err)
+      },
+    })
   }
 })

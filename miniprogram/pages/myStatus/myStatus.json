@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "Tabs": "../../Components/Tabs/tabs"
+    "Tabs": "../../Components/Tabs/tabs",
+    "badge": "../../Components/badge/badge"
   },
   "navigationBarTitleText": "我的通告"
 }

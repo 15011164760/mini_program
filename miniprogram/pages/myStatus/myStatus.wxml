@@ -1,5 +1,6 @@
 <!-- pages/myStatus/myStatus.wxml -->
 <view class="myStatusPage">
+    <!-- <badge></badge> -->
     <view class="tabs">
         <Tabs listData="{{tabList}}" bindchangeTab="changeDataTab">
             <view class="emptyClass" wx:if="{{resList.length<1}}">

@@ -7,21 +7,15 @@
 <view>
     <view>good1</view>
     <view>good1</view>
-    <button style="margin-bottom:10px">
-        <navigator target="" url="/pages/myStatus/myStatus" open-type="navigate">
-            编辑页面 myStatus
-        </navigator>
-    </button>
-    <button style="margin-bottom:10px">
-        <navigator target="" url="/pages/editInfo/editInfo" open-type="navigate">
-            编辑页面 navigate
-        </navigator>
-    </button>
-    <button style="margin-bottom:10px">
-        <navigator target="" url="/pages/editInfo/editInfo" open-type="redirect">
-            编辑页面 redirect
-        </navigator>
-    </button>
+    <navigator target="" url="/pages/myStatus/myStatus" open-type="navigate">
+        <button style="margin-bottom:10px">编辑页面 myStatus</button>
+    </navigator>
+    <navigator target="" url="/pages/editInfo/editInfo" open-type="navigate">
+        <button style="margin-bottom:10px">/pages/editInfo/editInfo</button>
+    </navigator>
+    <navigator target="" url="/pages/editInfo/editInfo" open-type="redirect">
+        <button style="margin-bottom:10px">编辑页面 redirect</button>
+    </navigator>
     <button open-type="share">shareshareshare</button>
     <Tabs getDa="我是传过去的值" listData="{{listData}}" bindchangeTab="changeDataTab">
         <view>{{listData[activeIndex].name}}</view>
