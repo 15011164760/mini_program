@@ -5,7 +5,8 @@
     "pages/editInfo/editInfo",
     "pages/myStatus/myStatus",
     "pages/logs/logs",
-    "pages/myTabs/myTabs"
+    "pages/myTabs/myTabs",
+    "pages/baseInfo/baseInfo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

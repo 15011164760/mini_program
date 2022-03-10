@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -28,6 +29,13 @@
         {
           "name": "",
           "pathName": "pages/myTabs/myTabs",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/baseInfo/baseInfo",
           "query": "",
           "scene": null,
           "launchMode": "default"

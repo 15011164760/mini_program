@@ -1,0 +1,101 @@
+<!-- pages/baseInfo/baseInfo.wxml -->
+<view class="baseInfoPage">
+    <scroll-view scroll-y="true" style="height:100%;">
+        <view class="inner">
+            <view class="row">
+                <view class="left">
+                    <text class="title">模卡名：</text>
+                </view>
+                <view class="right">
+                    <view class="desc">张嘉文</view>
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">性别：</text>
+                </view>
+                <view class="right">
+                    <view class="labeDesc">
+                        <radio-group bindchange="radioChange" class="labeSex">
+                            <label class="weui-cell weui-check__label labeSexInner" wx:for="{{items}}" wx:key="index" wx:for-index="index">
+                                <view class="weui-cell__hd">
+                                    <radio value="{{item.value}}" checked="true" />
+                                </view>
+                                <view class="weui-cell__bd">{{item.name}}</view>
+                            </label>
+                        </radio-group>
+                    </view>
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">身高：</text>
+                </view>
+                <view class="right">
+                    <input bindinput="bindinputChange" value="{{myHeight}}" class="weui-input rightInput" maxlength="100" placeholder="请填写身高" />
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">户籍城市：</text>
+                </view>
+                <view class="right">
+                    <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+                        <view class="picker">
+                            <text wx:if="{{region.length<1}}">请选择户籍城市</text>
+                            <text wx:else>{{region[0]}}-{{region[1]}}-{{region[2]}}</text>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">出生日期：</text>
+                </view>
+                <view class="right">
+                    <picker mode="date" value="{{date}}" start="1900-01-01" end="2022-12-01" bindchange="bindDateChange">
+                        <text wx:if="{{!date}}">请选择出生日期</text>
+                        <text wx:else>{{date}}</text>
+                    </picker>
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">视觉年龄：</text>
+                </view>
+            </view>
+            <view class="tagsClass">
+                <view bindtap="tagsEveryClick" data-type="designList" class="tagsEvery {{item.active?'activeChoose':''}}" wx:for="{{designList}}" wx:key="index" data-item="{{item}}" data-index="{{index}}">
+                    {{item.name}}
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">形象标签：</text>
+                </view>
+            </view>
+            <view class="tagsClass">
+                <view bindtap="tagsEveryClick" data-type="tagsList" class="tagsEvery {{item.active?'activeChoose':''}}" wx:for="{{tagsList}}" wx:key="index" data-item="{{item}}" data-index="{{index}}">
+                    {{item.name}}
+                </view>
+            </view>
+            <view class="row">
+                <view class="left">
+                    <text class="title">特长爱好：</text>
+                </view>
+            </view>
+            <view class="tagsClass">
+                <view bindtap="tagsEveryClick" data-type="specialtyList" class="tagsEvery {{item.active?'activeChoose':''}} {{item.value=='add'?'addbg':''}}" wx:for="{{specialtyList}}" wx:key="index" data-item="{{item}}" data-index="{{index}}">
+                    {{item.name}}
+                </view>
+            </view>
+        </view>
+         <view class="bottomTip">
+                <view class="icon"></view>
+                <text class="tip">个人信息安全保障中</text>
+            </view>
+            <view class="btnOuter">
+                <button type="primary" class="btnClass" size="mini">编辑</button>
+            </view>
+    </scroll-view>
+</view>
