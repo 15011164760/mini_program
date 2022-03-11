@@ -1,4 +1,5 @@
 // pages/baseInfo/baseInfo.ts
+import { listApi } from '../../api/requestApi'
 Page({
 
   /**
@@ -125,7 +126,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    listApi.getList({
+      data: {
+        x: 'a',
+        y: 'a'
+      },
+    }).then((res: any) => {
+      console.log(res);
+    }).catch((err: any) => {
+      console.log(err);
+    })
   },
 
   /**

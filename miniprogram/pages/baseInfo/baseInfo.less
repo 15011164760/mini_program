@@ -12,7 +12,6 @@
     background: #FFF;
 
     .row {
-      font-size: 28rpx;
       padding: 40rpx;
       height: 60rpx;
       // border: 2rpx solid #aaa;
@@ -48,7 +47,6 @@
       }
     }
     .tagsClass{
-      font-size: 28rpx;
       display: flex;
       flex-wrap: wrap;
       margin-top:-20rpx;
@@ -65,13 +63,13 @@
         border-radius: 40rpx;
         font-weight: 600;
         &.activeChoose{
-          color:rgb(245, 152, 12);
-          border-color:rgb(245, 152, 12);
+          color:var(--themeColor);
+          border-color:var(--themeColor);
         }
         &.addbg{
           color:#FFF;
-          background:rgb(245, 152, 12);
-          border-color:rgb(245, 152, 12);
+          background:var(--themeColor);
+          border-color:var(--themeColor);
         }
       }
     }
@@ -99,7 +97,7 @@
     display: flex;
     justify-content: center;
     .btnClass{
-      background:rgb(245, 152, 12) ;
+      background:var(--themeColor) ;
       width:300rpx;
       margin-bottom:20rpx;
       border-radius: 60rpx;
