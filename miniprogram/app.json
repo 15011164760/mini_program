@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/myWorks/myWorks",
     "pages/aboutMe/aboutMe",
     "pages/index/index",
     "pages/editInfo/editInfo",
     "pages/myStatus/myStatus",
     "pages/logs/logs",
     "pages/myTabs/myTabs",
-    "pages/baseInfo/baseInfo"
+    "pages/baseInfo/baseInfo",
+    "pages/industrySelection/industrySelection"
   ],
   "window": {
     "backgroundTextStyle": "dark",

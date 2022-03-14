@@ -37,6 +37,27 @@
           "name": "",
           "pathName": "pages/baseInfo/baseInfo",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/baseInfo/baseInfo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myWorks/myWorks",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/industrySelection/industrySelection",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

@@ -1,0 +1,18 @@
+<!--pages/industrySelection/industrySelection.wxml-->
+<view class="industrySelection">
+   <view class="left">
+       <view  class="industryName {{item.active?'active':''}}" bindtap="tabsChange" 
+       data-index="{{index}}"
+       wx:for="{{industryList}}" wx:key="index">
+            <view class="title">{{item.name}}</view>
+       </view>
+   </view>
+   <view class="right">
+      <searchbar></searchbar>
+      <view class="contain">
+          <view class="tag  {{item.active?'active':''}}" bindtap="chooseTagsFn" data-index="{{index}}"  wx:for="{{tagList}}" wx:key="index">
+              {{item.name}}
+          </view>
+      </view>
+   </view>
+</view>

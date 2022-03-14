@@ -1,0 +1,13 @@
+<!-- pages/myWorks/myWorks.wxml -->
+<view class="myWorksPage">
+    <Tabs listData="{{tabList}}" bindchangeTab="changeDataTab">
+        <view class="every" wx:for="{{worksList}}" wx:key="index">
+            <view class="title">
+                <view>{{item.name}}</view>
+            </view>
+            <view class="worksView">
+                <video id="myVideo" src="{{item.url}}" binderror="videoErrorCallback" show-snapshot-button show-mute-btn enable-danmu show-center-play-btn='{{true}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"></video>
+            </view>
+        </view>
+    </Tabs>
+</view>

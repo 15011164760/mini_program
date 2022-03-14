@@ -1,0 +1,66 @@
+/* pages/industrySelection/industrySelection.wxss */
+.industrySelection {
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+
+    .left {
+        width: 150rpx;
+        height: 100%;
+        background: #EEE;
+
+        .industryName {
+            display: flex;
+            align-items: center;
+            padding: 20rpx 5rpx;
+
+            &.active {
+                background: #FFF;
+            }
+
+            &.active::before {
+                content: '';
+                display: block;
+                width: 6rpx;
+                height: 30rpx;
+                margin-right: 10rpx;
+                background: var(--themeColor);
+            }
+
+            .title {
+                width: 150rpx;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .contain {
+            display: flex;
+            padding: 10rpx;
+            flex-wrap: wrap;
+            .tag {
+                width: ~'calc(50% - 40rpx)';
+                // margin-right:20rpx;
+                // margin-left:20rpx;
+                margin:20rpx;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                padding: 10rpx 0rpx;
+                border-radius: 40rpx;
+                border: 4rpx solid #EEE;
+
+                &.active {
+                    border-color: var(--themeColor);
+                }
+            }
+        }
+    }
+}

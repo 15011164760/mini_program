@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tabs": "../../Components/Tabs/tabs"
+  },
+  "navigationBarTitleText": "我的作品"
+}

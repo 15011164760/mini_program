@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchbar": "../../Components/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "行业选择"
+}
