@@ -8,12 +8,13 @@
     "pages/logs/logs",
     "pages/myTabs/myTabs",
     "pages/baseInfo/baseInfo",
-    "pages/industrySelection/industrySelection"
+    "pages/industrySelection/industrySelection",
+    "pages/myInformation/myInformation"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },

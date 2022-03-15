@@ -5937,7 +5937,7 @@ wx.getSetting({
         /** 状态栏的高度，单位px
          *
          * 最低基础库： `1.9.0` */
-        statusBarHeight: number
+        statusBarHeight: any
         /** 操作系统及版本 */
         system: string
         /** 微信版本号 */

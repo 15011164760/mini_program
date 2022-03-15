@@ -58,6 +58,13 @@
           "name": "",
           "pathName": "pages/industrySelection/industrySelection",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myInformation/myInformation",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }
